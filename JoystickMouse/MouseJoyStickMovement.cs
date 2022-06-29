@@ -78,6 +78,7 @@ public class MouseJoyStickMovement : MonoBehaviour
     private float GetPercentage(float current, float min, float max)
     {
         float result = (current - min) / (max - min);
+		result = Mathf.Clamp(result, min, max);
         return result;
     }
 }
