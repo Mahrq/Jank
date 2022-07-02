@@ -390,6 +390,7 @@ namespace Mahrq
             asset.FontSize = newData.FontSize;
             asset.Text = newData.Text;
             asset.Choices = newData.Choices;
+            EditorUtility.SetDirty(asset);
         }
         private bool DisplayMessageBox(MessageBoxContent message)
         {
